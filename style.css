@@ -1,0 +1,117 @@
+*{
+overflow-x: hidden;
+}
+
+.fa-edit:before{
+  color: #A42CD6;
+}
+
+.fa-trash-alt:before {
+  color: #040870;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #040870;
+  border: none;
+}
+.btn-info:hover {
+  background-color: #fff;
+  color: #040870;
+  border: 2px solid #040870;
+}
+
+.btn-info.focus, .btn-info:focus {
+  color: #fff;
+  background-color: #040870;
+}
+
+.btn-info.active, .btn-info:active {
+  color: #fff;
+  background-color: #040870;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #040870;
+  border-color: #040870;
+}
+.btn-info:active {
+  background-color: #fff;
+  color: #040870;
+  border: 2px solid #040870;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #040870;
+  border-color: #040870;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+  color: #040870;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #040870;
+}
+
+.h1, h1 {
+  font-size: 40px;
+  color:#040870 ;
+}
+
+.table {
+  border: 1px solid #040870;
+  max-width: 1000px !important;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+  border: 1px solid #040870;
+}
+
+
+/*  */
+div.dataTables_wrapper div.dataTables_length select {
+  width: 75px;
+  display: inline-block;
+  border: 1px solid #040870;
+}
+
+select.input-sm {
+  height: 30px;
+  line-height: 30px;
+  color: #040870;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+  color: #040870;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  color: #040870;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  color: #040870;
+}
+
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+  color: #040870;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+  border: 1px solid #040870;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #fff2ee;
+}
+
+
+
+
