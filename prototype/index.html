@@ -1,60 +1,63 @@
 <html>
-	<head>
-		<title>Store Manager</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-		<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>		
-		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script src="https://kit.fontawesome.com/aade6d3064.js" crossorigin="anonymous"></script>
-		<script src="app.js"></script>
-		<style>
-			body
-			{
-				margin:0;
-				padding:0;
-				background-color:#FFBFFF;
-			}
-			.box
-			{
-				width:1270px;
-				padding:20px;
-				/* background-color:#fff; */
-				border:1px solid #f7450f;
-				border-radius:5px;
-				margin-top:25px;
-			}
-		</style>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="container box">
-			<h1 align="center"> point de vente </h1>
+
+<head>
+	<title>point de vente</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/aade6d3064.js" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #FFBFFF;
+		}
+
+		.box {
+			width: 1270px;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #f7450f;
+			border-radius: 5px;
+			margin-top: 25px;
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container box">
+		<h1 align="center"> point de vente </h1>
+		<br />
+		<div class="table-responsive">
 			<br />
-			<div class="table-responsive">
-				<br />
-				<div align="right">
-					<button type="button" id="add_button" data-toggle="modal" data-target="#userModal" class="btn btn-info btn-lg">Add</button>
-				</div>
-				<br /><br />
-				<table  style=" width: 1225px;"id="user_data" class="table table-dark table-bordered table-striped">
-					<thead>
-						<tr>
-							<th width="18%">Image</th>
-							<th width="18%">Name</th>
-							<th width="18%">stock</th>
-							<th width="18%">Quantity</th>
-							<th width="18%">Panier</th>
-							<th width="5%">Edit</th>
-							<th width="5%">Delete</th>
-						</tr>
-					</thead>
-				</table>
-				
+			<div align="right">
+				<button type="button" id="add_button" data-toggle="modal" data-target="#userModal"
+					class="btn btn-info btn-lg">Add</button>
 			</div>
+			<br /><br />
+			<table style=" width: 1225px;" id="user_data" class="table table-dark table-bordered table-striped">
+				<thead>
+					<tr>
+						<th width="18%">Image</th>
+						<th width="18%">Name</th>
+						<th width="18%">stock</th>
+						<th width="18%">Quantity</th>
+						<th width="18%">Panier</th>
+						<th width="5%">Edit</th>
+						<th width="5%">Delete</th>
+					</tr>
+				</thead>
+			</table>
+
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
 
 
