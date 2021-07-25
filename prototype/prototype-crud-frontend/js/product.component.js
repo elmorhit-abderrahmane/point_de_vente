@@ -7,10 +7,10 @@ class Product extends React.Component {
 
         return (
                 <tr>
-              <td scope="row">{this.props.product.libelle}</td>
-              <td>{this.props.product.prix}</td>
-              <td>{this.props.product.stock}</td>
-              <td>{this.props.product.quantity}</td>
+              <td scope="row">{this.props.product.Firstname}</td>
+              <td>{this.props.product.Lastname}</td>
+              <td>{this.props.product.Matricule}</td>
+              <td>{this.props.product.Email}</td>
               <td></td>
               <td>
           <button type="button" className="btn btn-success ml-5" onClick={this.props.onClickUpdate}>

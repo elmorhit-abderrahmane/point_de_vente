@@ -4,17 +4,17 @@ require_once('../model/product.php');
 class productsManager {
 
 	public function getList(){
-		$dbh = new PDO("mysql:host=localhost;dbname=point","root","");
+		$dbh = new PDO("mysql:host=localhost;dbname=formers","root","");
 		$stack = array();
 		$req = "SELECT * FROM former";
 		$result = $dbh->query($req)->fetchAll();
 		foreach ($result as $row){
 			$item = new Product();
 			$item->setId($row["id"]);
-			$item->setFirst($row["libelle"]);
-			$item->setLast($row["prix"]);
-			$item->setMatricule($row["stock"]);
-			$item->setEmail($row["quantity"]);
+			$item->setFirst($row["Firstname"]);
+			$item->setLast($row["Lastname"]);
+			$item->setMatricule($row["Matricule"]);
+			$item->setEmail($row["Email"]);
 			array_push($stack, $item);
 		}
 		return $stack;
@@ -22,21 +22,21 @@ class productsManager {
 	}
 //Add Product
 		public function add($product){
-			$dbh = new PDO("mysql:host=localhost;dbname=point","root","");
-			$req = "INSERT INTO `former`(`id`,`libelle`, `prix`,`stock`,`quantity`) VALUES (:id,:libelle,:prix,:stock,:quantity)";
+			$dbh = new PDO("mysql:host=localhost;dbname=formers","root","");
+			$req = "INSERT INTO `former`(`id`,`Firstname`, `Lastname`,`Matricule`,`Email`) VALUES (:id,:Firstname,:Lastname,:Matricule,:Email)";
 
 			$updateProductQuery = $dbh ->prepare($req);
 			$updateProductQuery -> bindParam(":id",$product->getId(),PDO::PARAM_STR);	
-			$updateProductQuery -> bindParam(":libelle",$product->getName(),PDO::PARAM_STR);
-            $updateProductQuery -> bindParam(":prix",$product->getLast(),PDO::PARAM_STR);
-            $updateProductQuery -> bindParam(":stock",$product->getMatricule(),PDO::PARAM_STR);
-            $updateProductQuery -> bindParam(":quantity",$product->getEmail(),PDO::PARAM_STR);
+			$updateProductQuery -> bindParam(":Firstname",$product->getName(),PDO::PARAM_STR);
+            $updateProductQuery -> bindParam(":Lastname",$product->getLast(),PDO::PARAM_STR);
+            $updateProductQuery -> bindParam(":Matricule",$product->getMatricule(),PDO::PARAM_STR);
+            $updateProductQuery -> bindParam(":Email",$product->getEmail(),PDO::PARAM_STR);
 			$updateProductQuery->execute();
         }
 		// delete product
 
 		public function delete($id){
-			$dbh = new PDO("mysql:host=localhost;dbname=point","root","");
+			$dbh = new PDO("mysql:host=localhost;dbname=formers","root","");
 
 			$req = "DELETE FROM former WHERE id = $id";
 			$deleteProduct = $dbh->prepare($req);

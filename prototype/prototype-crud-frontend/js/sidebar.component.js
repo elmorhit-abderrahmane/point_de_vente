@@ -10,7 +10,7 @@ class SideBar extends React.Component {
             {/* Brand Logo */}
             <a href="../../index3.html" className="brand-link">
               <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
-              <span className="brand-text font-weight-light">Point de Vente </span>
+              <span className="brand-text font-weight-light">Systeme Pointage</span>
             </a>
             {/* Sidebar */}
             <div className="sidebar">
@@ -20,7 +20,7 @@ class SideBar extends React.Component {
                   <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
                 </div>
                 <div className="info">
-                  <a href="#" className="d-block">El-morhit Abderrahmane</a>
+                  <a href="#" className="d-block">Akhrif Jaafar</a>
                 </div>
               </div>
               {/* Sidebar Menu */}

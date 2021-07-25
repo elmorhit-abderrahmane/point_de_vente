@@ -27,13 +27,13 @@ class CrudProduct extends React.Component {
     //add product
     addproduct(e) {
         $.ajax({
-            url: "api/addProduct.php",
+            url: "/api/addProduct.php",
             method: "POST",
             data: {
-                libelle: libelle.value,
-                prix: prix.value,
-                stock: stock.value,
-                quantity: quantity.value,
+                Firstname: Firstname.value,
+                Lastname: Lastname.value,
+                Matricule: Matricule.value,
+                Email: Email.value,
             },
             success: function (data) {
                 this.chargementDonnees()
@@ -65,10 +65,10 @@ class CrudProduct extends React.Component {
             method: "POST",
             data: {
                 id : i,
-                libelle: libelle.value,
-                prix: prix.value,
-                stock: stock.value,
-                Quantity: Quantity.value,
+                Firstname: Firstname.value,
+                Lastname: Lastname.value,
+                Matricule: Matricule.value,
+                Email: Email.value,
             },
             success: function (data) {
                 this.chargementDonnees()
@@ -120,29 +120,28 @@ class CrudProduct extends React.Component {
 
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputName4">libelle</label>
-                                            <input type="text" className="form-control Firstname" id="libelle" placeholder="libelle" />
+                                            <label htmlFor="inputName4">First Name</label>
+                                            <input type="text" className="form-control Firstname" id="Firstname" placeholder="First name" />
                                         </div>
                                     </div>
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputLast4">prix</label>
-                                            <input type="number text" className="form-control Lastname" id="prix" placeholder="prix" />
-                                        </div>
-                                    </div>
-
-                                    <div className="form-row">
-                                        
-                                        <div className="form-group col-12">
-                                            <label htmlFor="inputMatricule4">Stock</label>
-                                            <input type="number" className="form-control Matricule" id="Stock" placeholder="Stock" />
+                                            <label htmlFor="inputLast4">Last Name</label>
+                                            <input type="text" className="form-control Lastname" id="Lastname" placeholder="Last name" />
                                         </div>
                                     </div>
 
                                     <div className="form-row">
                                         <div className="form-group col-12">
-                                            <label htmlFor="inputEmail4">quantity</label>
-                                            <input type="number" className="form-control Email" id="quantity" placeholder="quantity" />
+                                            <label htmlFor="inputMatricule4">Matricule</label>
+                                            <input type="number" className="form-control Matricule" id="Matricule" placeholder="Matricule" />
+                                        </div>
+                                    </div>
+
+                                    <div className="form-row">
+                                        <div className="form-group col-12">
+                                            <label htmlFor="inputEmail4">Email</label>
+                                            <input type="email" className="form-control Email" id="Email" placeholder="Email" />
                                         </div>
                                     </div>
 
@@ -162,10 +161,10 @@ class CrudProduct extends React.Component {
                 <table className="table table-hover">
                     <thead className="thead">
                         <tr>
-                            <th scope="col">libelle</th>
-                            <th scope="col">Prix</th>
-                            <th scope="col">Stock</th>
-                            <th scope="col">quantity</th>
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col">Matricule</th>
+                            <th scope="col">Email</th>
                             <th scope="col"></th>
                             <th scope="col"></th>
 
