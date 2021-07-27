@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div class="table_container">
-                        <h1 style="text-align: center; color:white;">Tableau Produits </h1>
+                        <h1 style="text-align: center; color:#333;">Tableau Produits </h1>
                         <div class="table-responsive">
                             <table class="table table-dark" id="table" data-toggle="table" data-search="true" data-filter-control="true" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                               
