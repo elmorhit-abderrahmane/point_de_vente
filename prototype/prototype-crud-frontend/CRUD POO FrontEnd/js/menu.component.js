@@ -11,13 +11,13 @@ class Menu extends React.Component {
               <a className="nav-link" data-widget="pushmenu" href="#" role="button"><i className="fas fa-bars" /></a>
             </li>
             <li className="nav-item d-none d-sm-inline-block">
-              <a href="ouvriers.html" className="nav-link">Ouvriers</a>
+              <a href="ouvriers.html" className="nav-link">Produit</a>
             </li>
           </ul>
           {/* Right navbar links */}
           <div className="user-panel mt-3 pb-1 mb-1 d-flex col-md-3 text-right">
           <div className="info">
-                  <a href="#" className="d-block">&#124; &nbsp;&nbsp;&nbsp;&nbsp;Akhrif Jaafar</a>
+                  <a href="#" className="d-block">&#124; &nbsp;&nbsp;&nbsp;&nbsp;Elmorhit Abdebderrahmane</a>
                 </div>
                 <div className="image">
                   <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />

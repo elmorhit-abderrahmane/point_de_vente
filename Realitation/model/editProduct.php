@@ -21,7 +21,6 @@
         $pName= $_POST['pname'];
         $buy= intval($_POST['buy']);
         $sell= intval($_POST['sell']);
-
         if($buy>=$sell){
             if(isset($_POST['Submit'])){
                 $sql= "UPDATE products SET name= '$pName', bought= '$buy', sold= '$sell' WHERE id = '$id'";

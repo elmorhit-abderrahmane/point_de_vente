@@ -106,7 +106,7 @@ class CrudProduct extends React.Component {
                     <div className="modal-dialog modal-dialog-centered" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalCenterTitle">Ajouter Ouvrier</h5>
+                                <h5 className="modal-title" id="exampleModalCenterTitle">Elmorhit Abdebderrahmane</h5>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -120,28 +120,28 @@ class CrudProduct extends React.Component {
 
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputName4">First Name</label>
-                                            <input type="text" className="form-control Firstname" id="Firstname" placeholder="First name" />
+                                            <label htmlFor="inputName4">Nom</label>
+                                            <input type="text" className="form-control Firstname" id="Firstname" placeholder="Nom" />
                                         </div>
                                     </div>
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputLast4">Last Name</label>
-                                            <input type="text" className="form-control Lastname" id="Lastname" placeholder="Last name" />
+                                            <label htmlFor="inputLast4">Acheter la quantité</label>
+                                            <input type="text" className="form-control Lastname" id="Lastname" placeholder="Acheter la quantité" />
                                         </div>
                                     </div>
 
                                     <div className="form-row">
                                         <div className="form-group col-12">
-                                            <label htmlFor="inputMatricule4">Matricule</label>
-                                            <input type="number" className="form-control Matricule" id="Matricule" placeholder="Matricule" />
+                                            <label htmlFor="inputMatricule4">Vendre la quantité</label>
+                                            <input type="number" className="form-control Matricule" id="Matricule" placeholder="Vendre la quantité" />
                                         </div>
                                     </div>
 
                                     <div className="form-row">
                                         <div className="form-group col-12">
-                                            <label htmlFor="inputEmail4">Email</label>
-                                            <input type="email" className="form-control Email" id="Email" placeholder="Email" />
+                                            <label htmlFor="inputEmail4">Créé à</label>
+                                            <input type="number" className="form-control Email" id="Email" placeholder="Créé à" />
                                         </div>
                                     </div>
 
@@ -161,10 +161,10 @@ class CrudProduct extends React.Component {
                 <table className="table table-hover">
                     <thead className="thead">
                         <tr>
-                            <th scope="col">Firstname</th>
-                            <th scope="col">Lastname</th>
-                            <th scope="col">Matricule</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Acheter la quantité</th>
+                            <th scope="col">Vendre la quantité</th>
+                            <th scope="col">Créé à</th>
                             <th scope="col"></th>
                             <th scope="col"></th>
 

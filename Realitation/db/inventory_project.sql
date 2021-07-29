@@ -72,13 +72,6 @@ INSERT INTO `products` (`id`, `name`, `bought`, `sold`, `image`, `created_at`, `
 (19, 'Honey', 40, 4, 'Uploads/honey-removebg-preview.png', '2021-03-30 13:33:28', '2021-04-09 15:33:28'),
 (20, 'Moisturizer', 100, 34, 'Uploads/cream-removebg-preview.png', '2021-03-30 13:34:01', '2021-03-30 13:34:01'),
 (22, 'Hand Wash', 500, 122, 'Uploads/hand-removebg-preview.png', '2021-03-30 13:34:45', '2021-03-30 13:34:45'),
-(23, 'Milk Powder', 40, 5, 'Uploads/milk-removebg-preview.png', '2021-03-30 13:35:07', '2021-03-30 13:35:07'),
-(24, 'Soap Bar', 700, 204, 'Uploads/soap-removebg-preview.png', '2021-03-30 13:38:01', '2021-03-30 13:38:01'),
-(28, 'Tooth Paste', 130, 35, 'Uploads/toothpaste-removebg-preview.png', '2021-03-30 15:16:45', '2021-03-30 15:16:45'),
-(30, 'Sunscreen', 56, 11, 'Uploads/sun-removebg-preview.png', '2021-03-31 01:32:14', '2021-03-31 01:32:14'),
-(31, 'Green Tea', 130, 45, 'Uploads/green-removebg-preview.png', '2021-03-31 01:43:42', '2021-04-08 11:43:42'),
-(32, 'Glucose', 234, 43, 'Uploads/glucose-removebg-preview.png', '2021-03-31 01:45:21', '2021-03-31 01:45:21'),
-(33, 'Body Lotion', 58, 0, 'Uploads/body-removebg-preview.png', '2021-04-04 23:08:38', '2021-04-04 23:08:38');
 
 -- --------------------------------------------------------
 
